@@ -1,0 +1,88 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <article>Перша Стаття</article>
+        <div id="home">
+            <h2>Головна</h2>
+        </div>
+        <aside>
+            <p>Побічна інформація</p>
+        </aside>
+        <audio controls>
+            <source src="avenger-319412.mp3" type="audio/mp3">
+        </audio>
+        <p style="color: red;">Текст з <bdi style="color: greenyellow;">іншим</bdi> форматуванням</p>
+        <p>Текст з можливим <wbr>переносом</p>
+        <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+        <script>
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.fillRect(50, 50, 100, 100);
+        </script>
+        <input list="colors" id="color" name="color">
+        <datalist id="colors">
+            <option value="Blue">
+            <option value="Black">
+            <option value="Green">
+            <option value="Yellow">
+        </datalist>
+        <details>
+            <summary>Деталі</summary>
+            <p>Тут міститься додаткова інформація, яку можна приховати або відкрити</p>
+        </details>
+        <dialog open>
+            <p>Це діалогове вікно</p>
+            <button onclick="this.closest('dialog').close()">Закрити</button>
+        </dialog>
+        <embed src="https://nupp.edu.ua/uploads/files/0/main/struct/nniitm/docs/stud-raitings/konkurs-2022-2023.pdf" width="400" height="400">
+        <figure>
+            <img src="lemon.jpg" alt="лимон">
+            <figcaption>Лимон</figcaption>
+        </figure>
+        <p>Цей текст <mark>важливий</mark></p>
+        <menu>
+            <menuitem label="Вибір 1" onclick="alert('Вибрано!')"></menuitem>
+            <menuitem label="Вибір 2" onclick="alert('Вибрано!')"></menuitem>
+        </menu>
+        <meter value="0.7" min="0" max="1">70%</meter>
+        <nav>
+            <ul>
+              <li><a href="#home">Головна</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input type="number" id="num1" value="5">
+            <input type="number" id="num2" value="10">
+            <output id="result">15</output>
+        </form>
+        <picture>
+            <source srcset="cherry.jpg" media="(min-width: 601px)">
+            <source srcset="avocado.jpg" media="(max-width: 600px)">
+            <img src="cherry.jpg">
+        </picture>
+        <progress value="70" max="100">70%</progress>
+        <section>
+            <h2>Заголовок секції</h2>
+            <p>зміст секції</p>
+        </section>
+        <video controls>
+            <source src="vid1.mp4" type="video/mp4">
+            <source src="vid2.mp4" type="video/mp4">
+            <track src="1.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
+        <details>
+          <summary>Тисни, щоб побачити деталі</summary>
+          <p>Деталі тут</p>
+        </details>
+        <template id="my-template">
+            <p>Це шаблон</p>
+        </template>
+        <time datetime="2025-04-01">1 квітня 2025 року</time>
+
+    </body>
+    <footer>
+
+    </footer>
+</html>
